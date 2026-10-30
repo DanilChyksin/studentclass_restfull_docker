@@ -3,13 +3,11 @@ name: CI Pipeline
 on:
   push:
     branches:
-      - example
+      - main
 
 env:
   REGISTRY: ghcr.io
 
-
-  
 jobs:
   build-and-push-images:
     runs-on: ubuntu-latest
